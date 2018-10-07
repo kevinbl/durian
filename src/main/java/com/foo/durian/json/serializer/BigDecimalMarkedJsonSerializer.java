@@ -12,7 +12,7 @@ import java.text.DecimalFormat;
 /**
  * 显示正号的数字
  *
- * Created by foolish on 16/12/22.
+ * Created by f on 16/12/22.
  */
 @SuppressWarnings("all")
 public class BigDecimalMarkedJsonSerializer extends JsonSerializer<BigDecimal> {

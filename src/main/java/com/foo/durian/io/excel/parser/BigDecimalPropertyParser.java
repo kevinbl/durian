@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 /**
  * version 1.0.0
- * Created by foolish on 16/8/17 下午4:10.
+ * Created by f on 16/8/17 下午4:10.
  */
 public class BigDecimalPropertyParser implements PropertyParser<BigDecimal> {
 

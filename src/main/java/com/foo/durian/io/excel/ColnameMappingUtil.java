@@ -13,7 +13,7 @@ import java.lang.reflect.Field;
 import java.util.Map;
 
 /**
- * Version 1.0.0 Created by foolish on 16/11/16.
+ * Version 1.0.0 Created by f on 16/11/16.
  */
 public class ColnameMappingUtil {
 

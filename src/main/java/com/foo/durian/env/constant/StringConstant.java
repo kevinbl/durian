@@ -4,7 +4,7 @@ import java.nio.charset.Charset;
 
 /**
  * version 1.0.0
- * Created by foolish on 16/9/3 上午10:20.
+ * Created by f on 16/9/3 上午10:20.
  */
 @Deprecated
 public class StringConstant {

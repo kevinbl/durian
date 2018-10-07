@@ -1,7 +1,7 @@
 package com.foo.durian.concurrent;
 
 /**
- * Version 1.0.0 Created by foolish on 17/2/21.
+ * Version 1.0.0 Created by f on 17/2/21.
  */
 public abstract class RollbackableRunnable implements Runnable {
 

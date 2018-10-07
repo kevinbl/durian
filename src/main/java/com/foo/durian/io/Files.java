@@ -7,7 +7,7 @@ import java.util.List;
 
 /**
  * version 1.0.0
- * Created by foolish on 16/8/1 下午8:21.
+ * Created by f on 16/8/1 下午8:21.
  */
 @Deprecated
 public class Files {

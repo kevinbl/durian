@@ -4,7 +4,7 @@ package com.foo.durian.io.excel.formatter;
  * 对象格式化处理的接口
  *
  * Version 1.0.0
- * Created by foolish on 16/10/15.
+ * Created by f on 16/10/15.
  */
 public interface Formatter<T> {
 

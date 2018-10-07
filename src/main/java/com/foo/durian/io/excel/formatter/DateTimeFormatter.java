@@ -4,7 +4,7 @@ import com.foo.durian.env.constant.DateTimePattern;
 import org.joda.time.DateTime;
 
 /**
- * Created by foolish on 2017/1/9.
+ * Created by f on 2017/1/9.
  */
 public class DateTimeFormatter implements Formatter {
     @Override

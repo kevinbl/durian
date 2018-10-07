@@ -2,7 +2,7 @@ package com.foo.durian.exception;
 
 /**
  * Version 1.0.0
- * Created by foolish on 16/11/22.
+ * Created by f on 16/11/22.
  */
 public class UnexpectedResultException extends RuntimeException {
     private static final long serialVersionUID = 5745137852781726060L;

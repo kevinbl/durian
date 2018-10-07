@@ -5,7 +5,7 @@ import com.foo.durian.io.FileLineCell;
 /**
  * 文件解析异常; 通常是针对使用{@link FileLineCell}的分行分列的解析
  *
- * @author foolish
+ * @author f
  * @version v1.0.0
  * @since 17/5/27
  */

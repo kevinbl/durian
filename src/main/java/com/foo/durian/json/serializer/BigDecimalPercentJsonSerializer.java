@@ -12,7 +12,7 @@ import java.text.DecimalFormat;
 /**
  * 不显示正号的百分数
  *
- * Created by foolish on 16/12/22.
+ * Created by f on 16/12/22.
  */
 @SuppressWarnings("all")
 public class BigDecimalPercentJsonSerializer extends JsonSerializer<BigDecimal> {

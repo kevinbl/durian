@@ -7,7 +7,7 @@ import java.io.UnsupportedEncodingException;
 
 /**
  * Version 1.0.0
- * Created by foolish on 16/8/18.
+ * Created by f on 16/8/18.
  */
 public class EncodingUtil {
 

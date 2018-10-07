@@ -8,8 +8,8 @@ import java.util.Date;
 /**
  * 将任意类型转换成string
  * version 1.0.0
- * Created by foolish on 16/8/2 下午12:05.
- * updated by foolish
+ * Created by f on 16/8/2 下午12:05.
+ * updated by f
  */
 public class StringPropertyParser implements PropertyParser<String> {
     public String parse(Object t) {

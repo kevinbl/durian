@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 动态生成Excel，列记录。 Created by foolish on 2017/1/9.
+ * 动态生成Excel，列记录。 Created by f on 2017/1/9.
  */
 @SuppressWarnings("all")
 public class ColumnRecord implements Serializable {

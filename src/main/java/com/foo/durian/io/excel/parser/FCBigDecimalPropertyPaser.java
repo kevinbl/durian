@@ -9,7 +9,7 @@ import java.text.ParseException;
 /**
  * 金融数字，三位一个逗号
  *
- * Created by foolish on 2017/2/10.
+ * Created by f on 2017/2/10.
  */
 public class FCBigDecimalPropertyPaser implements PropertyParser<BigDecimal> {
     @Override

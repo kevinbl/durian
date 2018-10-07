@@ -3,7 +3,7 @@ package com.foo.durian.collection.array;
 /**
  * 数组相关
  * version 1.0.0
- * Created by foolish on 16/8/21 下午5:58.
+ * Created by f on 16/8/21 下午5:58.
  */
 public class Arrays {
 

@@ -9,7 +9,7 @@ import java.math.BigDecimal;
 
 /**
  * Version 1.0.0
- * Created by foolish on 16/11/21.
+ * Created by f on 16/11/21.
  */
 public class BigDecimalDeserializer extends JsonDeserializer<BigDecimal> {
     @Override

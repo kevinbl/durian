@@ -7,7 +7,7 @@ import com.google.common.collect.Lists;
 
 /**
  * 动态生成Excel，行记录。
- * Created by foolish on 2017/1/9.
+ * Created by f on 2017/1/9.
  */
 @SuppressWarnings("all")
 public class RowRecord implements Serializable {

@@ -5,7 +5,7 @@ import java.math.BigInteger;
 
 /**
  * version 1.0.0
- * Created by foolish on 16/9/14 下午5:45.
+ * Created by f on 16/9/14 下午5:45.
  */
 public class TypeParser {
 

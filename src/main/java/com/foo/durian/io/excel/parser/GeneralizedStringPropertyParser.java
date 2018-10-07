@@ -5,7 +5,7 @@ import org.joda.time.DateTime;
 import java.util.Date;
 
 /**
- * Created by foolish on 2017/2/17.
+ * Created by f on 2017/2/17.
  */
 public class GeneralizedStringPropertyParser implements PropertyParser<String> {
     @Override

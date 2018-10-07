@@ -5,7 +5,7 @@ import com.foo.durian.io.excel.parser.PropertyParser;
 /**
  * 不把这个类定义成annotation 是因为考虑到一个类可能给多个表用，每个表的定义都不一样
  * version 1.0.0
- * Created by foolish on 16/8/1 下午7:33.
+ * Created by f on 16/8/1 下午7:33.
  */
 public class FileLineCell {
 

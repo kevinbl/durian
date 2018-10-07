@@ -6,7 +6,7 @@ import org.joda.time.format.DateTimeFormat;
 import java.util.Date;
 
 /**
- * Version 1.0.0 Created by foolish on 16/11/16.
+ * Version 1.0.0 Created by f on 16/11/16.
  */
 public class DateTimePropertyParser implements PropertyParser<DateTime> {
     @Override

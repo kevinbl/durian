@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 import java.text.DecimalFormat;
 
 /**
- * Created by foolish on 2017/2/10.
+ * Created by f on 2017/2/10.
  */
 public class BigDecimalMarkedFormatter implements Formatter<BigDecimal> {
     private static DecimalFormat df = new DecimalFormat("#,###.00");

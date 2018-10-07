@@ -1,7 +1,7 @@
 package com.foo.durian.env.constant;
 
 /**
- * Created by foolish on 2017/2/14.
+ * Created by f on 2017/2/14.
  */
 public enum DateTimePattern {
 

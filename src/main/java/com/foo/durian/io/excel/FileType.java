@@ -2,7 +2,7 @@ package com.foo.durian.io.excel;
 
 /**
  * version 1.0.0
- * Created by foolish on 16/8/1 下午7:47.
+ * Created by f on 16/8/1 下午7:47.
  */
 public enum FileType {
 

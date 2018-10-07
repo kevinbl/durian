@@ -11,7 +11,7 @@ import java.util.Set;
 /**
  * 用于存储&传递格式化相关的配置信息 TIPS: 一个可能更合理的实现方式是使用Builder模式构造配置项
  *
- * Version 1.0.0 Created by foolish on 16/10/15.
+ * Version 1.0.0 Created by f on 16/10/15.
  */
 public class TableFormatterConfigurer {
 

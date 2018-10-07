@@ -397,7 +397,7 @@ public class ExcelExportUtil {
             } catch (Exception e) {
                 logger.error("导出Excel日期格式化错误！", e);
             }
-        } else if (fieldValue instanceof DateTime) { // 添加对DateTime类型的兼容(采用与Date类型一样的pattern设置) [by foolish
+        } else if (fieldValue instanceof DateTime) { // 添加对DateTime类型的兼容(采用与Date类型一样的pattern设置) [by f
                                                      // 2016/09/05]
             try {
                 String pattern = StringUtils.isBlank(aimPattern) ? DEFAULT_DATE_FORMAT : aimPattern;
@@ -449,7 +449,7 @@ public class ExcelExportUtil {
      */
     private static List<Field> getExportableFields(Class<?> clazz, final TableFormatterConfigurer configurer) {
         List<Field> fields = Lists.newArrayList();
-        /* 循环向上查找, 以支持父类中的属性导出 [by foolish 2016/09/05] */
+        /* 循环向上查找, 以支持父类中的属性导出 [by f 2016/09/05] */
         for (Class<?> dataClass : getClassesInHierarchy(clazz)) {
             fields.addAll(Arrays.asList(dataClass.getDeclaredFields()));
         }
@@ -517,7 +517,7 @@ public class ExcelExportUtil {
 
     private static Map<String, Method> getFormattingMethods(Class<?> clazz) {
         List<Method> methods = Lists.newArrayList();
-        /* 循环向上查找, 以支持父类中的格式化方法 [by foolish 2017/02/09] */
+        /* 循环向上查找, 以支持父类中的格式化方法 [by f 2017/02/09] */
         for (Class<?> dataClass : getClassesInHierarchy(clazz)) {
             methods.addAll(Arrays.asList(dataClass.getDeclaredMethods()));
         }

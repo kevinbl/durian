@@ -7,7 +7,7 @@ import org.joda.time.DateTime;
 import java.io.IOException;
 
 /**
- * Version 1.0.0 Created by foolish on 17/3/1.
+ * Version 1.0.0 Created by f on 17/3/1.
  */
 public class NumericDateTimeJsonDeserializer extends DateTimeDeserializer {
 

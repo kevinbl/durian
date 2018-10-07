@@ -8,7 +8,7 @@ import java.lang.annotation.Target;
 /**
  * Excel列顺序注解
  *
- * @author foolish
+ * @author f
  * @version v1.0.0
  * @since 17/3/20
  */

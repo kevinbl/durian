@@ -1,0 +1,247 @@
+<!DOCTYPE project [
+        <!ELEMENT project (modelVersion|groupId|artifactId|version|packaging|properties|dependencies|build)*>
+        <!ATTLIST project
+                xsi:schemaLocation CDATA #REQUIRED
+                xmlns:xsi CDATA #REQUIRED
+                xmlns CDATA #REQUIRED>
+        <!ELEMENT modelVersion (#PCDATA)>
+        <!ELEMENT groupId (#PCDATA)>
+        <!ELEMENT artifactId (#PCDATA)>
+        <!ELEMENT version (#PCDATA)>
+        <!ELEMENT packaging (#PCDATA)>
+        <!ELEMENT properties (logback.version)*>
+        <!ELEMENT logback.version (#PCDATA)>
+        <!ELEMENT dependencies (dependency)*>
+        <!ELEMENT dependency (groupId|artifactId|version|exclusions|scope)*>
+        <!ELEMENT exclusions (exclusion)*>
+        <!ELEMENT exclusion (groupId|artifactId)*>
+        <!ELEMENT scope (#PCDATA)>
+        <!ELEMENT build (plugins|finalName)*>
+        <!ELEMENT plugins (plugin)*>
+        <!ELEMENT plugin (groupId|artifactId|configuration)*>
+        <!ELEMENT configuration (source|target|encoding)*>
+        <!ELEMENT source (#PCDATA)>
+        <!ELEMENT target (#PCDATA)>
+        <!ELEMENT encoding (#PCDATA)>
+        <!ELEMENT finalName (#PCDATA)>
+        ]>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.foo</groupId>
+    <artifactId>durian</artifactId>
+    <version>1.0.0</version>
+    <packaging>jar</packaging>
+
+    <properties>
+        <logback.version>1.2.3</logback.version>
+        <org.springframework.version>4.2.3.RELEASE</org.springframework.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>commons-net</groupId>
+            <artifactId>commons-net</artifactId>
+            <version>3.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.xmlbeans</groupId>
+            <artifactId>xmlbeans</artifactId>
+            <version>2.5.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>stax</groupId>
+                    <artifactId>stax-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-csv</artifactId>
+            <version>1.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.16-beta1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>3.16-beta1</version>
+            <exclusions>
+                <!-- 该jar和xml-apis有重复类 -->
+                <exclusion>
+                    <groupId>stax</groupId>
+                    <artifactId>stax-api</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.xmlbeans</groupId>
+                    <artifactId>xmlbeans</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>19.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.4</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>3.8.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit-dep</artifactId>
+            <version>4.10</version>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>joda-time</groupId>
+            <artifactId>joda-time</artifactId>
+            <version>2.3</version>
+        </dependency>
+
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.monitorjbl</groupId>
+            <artifactId>xlsx-streamer</artifactId>
+            <version>1.0.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.poi</groupId>
+                    <artifactId>poi-ooxml</artifactId>
+                </exclusion>
+                <exclusion>
+                    <groupId>org.apache.xmlbeans</groupId>
+                    <artifactId>xmlbeans</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+
+
+        <!--httpclient-->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore</artifactId>
+            <version>4.4.6</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpcore-nio</artifactId>
+            <version>4.4.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpasyncclient</artifactId>
+            <version>4.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.ning</groupId>
+            <artifactId>async-http-client</artifactId>
+            <version>1.9.39</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.8.7</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.8.7</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+            <version>1.1.1</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>junit</groupId>
+                    <artifactId>junit</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.tomcat</groupId>
+            <artifactId>tomcat-servlet-api</artifactId>
+            <version>7.0.64</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${org.springframework.version}</version>
+        </dependency>
+    </dependencies>
+
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+        <finalName>common</finalName>
+    </build>
+
+</project>
